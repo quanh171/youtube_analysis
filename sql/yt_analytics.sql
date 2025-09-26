@@ -91,7 +91,7 @@ SELECT
 FROM video_data;
 
 -- --------------------------------------------
--- 4) MONTHLY KPIs (median via window trick)
+-- 4) MONTHLY KPIs
 -- --------------------------------------------
 WITH base AS (
   SELECT
@@ -149,9 +149,8 @@ ORDER BY engagement_rate DESC
 LIMIT 15;
 
 -- --------------------------------------------
--- FULL PEARSON CORRELATION MATRIX (as a view)
+-- PEARSON CORRELATION MATRIX
 -- Metrics: views, likes, comments, duration_seconds, engagement_rate
--- Requires MySQL 8.0+ (CTEs)
 -- --------------------------------------------
 DROP VIEW IF EXISTS vw_corr_pearson;
 CREATE VIEW vw_corr_pearson AS
@@ -283,3 +282,36 @@ SELECT
 FROM pairs
 GROUP BY x
 ORDER BY FIELD(x,'views','likes','comments','duration_seconds','engagement_rate');
+
+
+
+-- =========================================================
+-- FOR TABLEAU 
+-- =========================================================
+-- --------------------------------------------
+-- Add two deature views
+-- --------------------------------------------
+-- Per-1k interaction rates (less denominator-coupling artifacts)
+CREATE OR REPLACE VIEW vw_video_rates AS
+SELECT
+  title, published_date, duration_seconds, views, likes, comments,
+  1000.0 * likes    / NULLIF(views,0) AS likes_per_1k,
+  1000.0 * comments / NULLIF(views,0) AS comments_per_1k,
+  (likes + comments) / NULLIF(views,0) AS engagement_rate,
+  upload_month, published_year, published_month
+FROM video_data;
+
+-- Log-transformed counts (tame heavy tails)
+CREATE OR REPLACE VIEW vw_video_logs AS
+SELECT
+  title, published_date, duration_seconds,
+  LOG10(views + 1)    AS log_views,
+  LOG10(likes + 1)    AS log_likes,
+  LOG10(comments + 1) AS log_comments
+FROM video_data;
+
+-- --------------------------------------------
+-- Add indexes for Tableau filters
+-- --------------------------------------------
+ALTER TABLE video_data ADD INDEX idx_year_month (published_year, published_month);
+ALTER TABLE video_data ADD INDEX idx_month_char (upload_month);

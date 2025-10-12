@@ -107,13 +107,6 @@ The analysis focuses on Regular (long-form) music videos between 2020 and 2025, 
 | Environment | Jupyter Notebook |
 
 ---
-
-## 🚀 Reproducibility
-
-```bash
-# Clone the repo
-git clone https://github.com/<yourusername>/youtube_analysis.git
-cd youtube_analysis
-
 # (Optional) run SQL locally
 mysql -u root -p < sql/yt_analytics.sql
+

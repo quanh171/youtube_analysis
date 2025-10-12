@@ -11,23 +11,25 @@ The analysis focuses on Regular (long-form) music videos between 2020 and 2025, 
   youtube_analysis/
   │
   ├─ data/ → raw & cleaned data files
+  │ ├─ cleaned_data/
+  │ │ └─ youtube_analytics_export.xlsx # MySQL-exported views for Tableau
   │ ├─ ts_channel_data.csv # channel-level metrics
-  │ ├─ ts_video_data.csv # per-video metrics
-  │
-  └─ cleaned_data/
-  │
-  └─ youtube_analytics_export.xlsx # MySQL-exported views for Tableau
-  │ ├─ notebooks/ → Jupyter notebooks for API & export
-  │ ├─ Youtube_API_Analytics.ipynb
-  │
-  └─ export.ipynb
-  │ ├─ sql/ → schema, calculations, and views
+  │ └─ ts_video_data.csv # per-video metrics
+  │ 
+  ├─ notebooks/ → Jupyter notebooks for API & export
+  │ ├─ export.ipynb
+  │ └─ youtube_api_analytics.ipynb
+  │ 
+  ├─ sql/ → schema, calculations, and views
   │ └─ yt_analytics.sql
-  │ ├─ visualizations/ → Tableau workbook
+  │ 
+  ├─ visualizations/ → Tableau workbook
+  │  └─ yt_dashboard.twb
   │
-  └─ yt_dashboard.twb
-  │ ├─ LICENSE → MIT license
-  ├─ .gitignore / .gitattributes
+  ├─ .gitattributes
+  │
+  ├─ LICENSE → MIT license
+  │
   └─ README.md → project documentation
 </pre>
 
@@ -117,3 +119,4 @@ cd youtube_analysis
 
 # (Optional) run SQL locally
 mysql -u root -p < sql/yt_analytics.sql
+

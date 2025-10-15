@@ -152,7 +152,7 @@ The analysis focuses on Regular (long-form) music videos between 2020 and 2025, 
 ---
 
 ## 🌐 Tableau Public Dashboard
-🔗 [View Interactive Dashboard]([https://public.tableau.com/app/profile/<yourusername>/viz/TaylorSwift_YT_Dashboard](https://public.tableau.com/views/yt_dashboard_17605021902130/DB_PerformancePlaybook?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))
+🔗 [View Live Dashboard](https://public.tableau.com/views/yt_dashboard_17605021902130/DB_PerformancePlaybook?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
@@ -165,5 +165,6 @@ cd youtube_analysis
 
 # (Optional) run SQL locally
 mysql -u root -p < sql/yt_analytics.sql
+
 
 

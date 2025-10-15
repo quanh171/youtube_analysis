@@ -23,8 +23,9 @@ The analysis focuses on Regular (long-form) music videos between 2020 and 2025, 
   ├─ sql/ → schema, calculations, and views
   │ └─ yt_analytics.sql
   │ 
-  ├─ visualizations/ → Tableau workbook
-  │  └─ yt_dashboard.twb
+  ├─ visualizations/ → Dashboard preview and Tableau workbook
+  │ ├─ dashboard_preview.png
+  │ └─ yt_dashboard.twb
   │
   ├─ .gitattributes
   │
@@ -55,13 +56,19 @@ The analysis focuses on Regular (long-form) music videos between 2020 and 2025, 
 
 ---
 
+## 👀 Dashboard Preview
+
+![Dashboard Preview](visualizations/dashboard_preview.png)
+
+---
+
 ## 📊 Tableau Dashboard Highlights
 
 ### 1️⃣ KPI Overview
 **Metrics:** Total videos, total views, median views, average engagement rate.  
 > *Summarizes 2020–2025 performance and channel health at a glance.*
 
-### 2️⃣ Monthly Trend — Views vs. Engagement
+### 2️⃣ Quarterly Trend — Views vs. Engagement
 **Type:** Dual-axis bar + line chart  
 > Reveals cyclical performance patterns around album releases and major content drops.
 
@@ -97,7 +104,41 @@ The analysis focuses on Regular (long-form) music videos between 2020 and 2025, 
 
 ---
 
-## 🧠 Tech Stack
+## 🧠 What I Learned
+
+- **API integration:** Authenticated and retrieved structured data from the YouTube Data API using Python and pandas.  
+- **SQL data modeling:** Designed relational schemas and used window functions + aggregations to compute KPIs and Pearson correlations directly in MySQL.  
+- **Data storytelling:** Structured Tableau dashboards to lead stakeholders from overview → patterns → insights → action.  
+- **Statistical validation:** Interpreted correlations and distributions to distinguish causation vs association.  
+- **Project organization:** Learned best practices for GitHub documentation, modular foldering, and reproducibility.
+
+---
+
+## ⚠️ Limitations / Areas for Improvement
+
+| Limitation | Description | Potential Fix |
+|-------------|--------------|----------------|
+| **Data scope** | Only includes Regular music videos, excludes Shorts and livestreams. | Expand data pull to all video types for cross-format comparison. |
+| **API limits** | Daily quota and pagination constrained full-history retrieval. | Automate incremental pulls via scheduled jobs. |
+| **Engagement definition** | Engagement rate calculated as (Likes + Comments) / Views; doesn’t include watch time. | Use advanced metrics from YouTube Analytics API if available. |
+| **Static dashboard** | Tableau dashboard relies on manual refresh from Excel. | Connect Tableau directly to SQL or automate via Python script. |
+| **No predictive modeling** | Analysis is descriptive, not predictive. | Add regression or ML model to forecast video performance. |
+
+---
+
+## 🔮 Next Steps
+
+| Area | Next Development | Purpose |
+|------|------------------|----------|
+| **Automation** | Build an automated ETL pipeline (Python + cron/Airflow) to refresh data weekly. | Demonstrate data engineering workflow. |
+| **Predictive Analytics** | Train regression or XGBoost model to predict future views and engagement. | Quantify expected performance for new uploads. |
+| **Sentiment Analysis** | Use YouTube comment text to analyze fan sentiment & topic trends. | Add NLP component for richer engagement insights. |
+| **Streamlit / Dash App** | Recreate the Tableau dashboard in a Python web app. | Make the dashboard dynamic and shareable. |
+| **Benchmarking** | Add other artists’ channels for comparison. | Show market position and audience retention relative to peers. |
+
+---
+
+## 🧩 Tech Stack
 
 | Layer | Tools |
 |-------|-------|
@@ -110,6 +151,11 @@ The analysis focuses on Regular (long-form) music videos between 2020 and 2025, 
 
 ---
 
+## 🌐 Tableau Public Dashboard
+🔗 [View Interactive Dashboard]([https://public.tableau.com/app/profile/<yourusername>/viz/TaylorSwift_YT_Dashboard](https://public.tableau.com/views/yt_dashboard_17605021902130/DB_PerformancePlaybook?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))
+
+---
+
 ## 🚀 Reproducibility
 
 ```bash
@@ -119,4 +165,5 @@ cd youtube_analysis
 
 # (Optional) run SQL locally
 mysql -u root -p < sql/yt_analytics.sql
+
 

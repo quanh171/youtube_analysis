@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20252.25.0912.2314                               -->
-<workbook original-version='18.1' source-build='2025.2.3 (20252.25.0912.2314)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2025.2.3 (20252.25.0912.2314)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AccessibleZoneTabOrder />
     <AnimationOnByDefault />
@@ -21,443 +21,17 @@
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='yt_dashboard_17605021902130' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='vw_monthly_kpis' inline='true' name='federated.1eqm1oo1qbq6941287mp70agdebb' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='youtube_analytics_export' name='excel-direct.12uajnk0a29a7j11nwun212b2fnm'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/quan1/Documents/GitHub/youtube_analysis/data/cleaned_data/youtube_analytics_export.xlsx' interpretationMode='0' password='' server='' validate='no' />
-          </named-connection>
-        </named-connections>
-        <relation connection='excel-direct.12uajnk0a29a7j11nwun212b2fnm' name='vw_monthly_kpis' table='[vw_monthly_kpis$]' type='table'>
-          <columns gridOrigin='A1:E131:no:A1:E131:0' header='yes' outcome='6'>
-            <column datatype='date' date-parse-format='yyyy-MM-dd' name='month_start' ordinal='0' />
-            <column datatype='integer' name='video_count' ordinal='1' />
-            <column datatype='real' name='avg_views' ordinal='2' />
-            <column datatype='real' name='median_views' ordinal='3' />
-            <column datatype='real' name='avg_engagement_rate' ordinal='4' />
-          </columns>
-        </relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[vw_monthly_kpis]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:E131:no:A1:E131:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>6</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>month_start</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[month_start]</local-name>
-            <parent-name>[vw_monthly_kpis]</parent-name>
-            <remote-alias>month_start</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>video_count</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[video_count]</local-name>
-            <parent-name>[vw_monthly_kpis]</parent-name>
-            <remote-alias>video_count</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>avg_views</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[avg_views]</local-name>
-            <parent-name>[vw_monthly_kpis]</parent-name>
-            <remote-alias>avg_views</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
-            </attributes>
-            <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>median_views</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[median_views]</local-name>
-            <parent-name>[vw_monthly_kpis]</parent-name>
-            <remote-alias>median_views</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
-            </attributes>
-            <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>avg_engagement_rate</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[avg_engagement_rate]</local-name>
-            <parent-name>[vw_monthly_kpis]</parent-name>
-            <remote-alias>avg_engagement_rate</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
-            </attributes>
-            <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
-        <aliases>
-          <alias key='&quot;[federated.1eqm1oo1qbq6941287mp70agdebb].[avg:avg_engagement_rate:qk]&quot;' value=' Engagement Rate' />
-          <alias key='&quot;[federated.1eqm1oo1qbq6941287mp70agdebb].[sum:avg_views:qk]&quot;' value='Average Views' />
-        </aliases>
-      </column>
-      <column caption='vw_monthly_kpis' datatype='table' name='[__tableau_internal_object_id__].[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]' role='measure' type='quantitative' />
-      <column caption='Avg Engagement Rate' datatype='real' name='[avg_engagement_rate]' role='measure' type='quantitative' />
-      <column caption='Avg Views' datatype='real' name='[avg_views]' role='measure' type='quantitative' />
-      <column caption='Median Views' datatype='real' name='[median_views]' role='measure' type='quantitative' />
-      <column aggregation='Count' caption='Month Start' datatype='date' datatype-customized='true' name='[month_start]' role='dimension' type='ordinal' />
-      <column caption='Video Count' datatype='integer' name='[video_count]' role='measure' type='quantitative' />
-      <column-instance column='[avg_engagement_rate]' derivation='Avg' name='[avg:avg_engagement_rate:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[avg_views]' derivation='Sum' name='[sum:avg_views:qk]' pivot='key' type='quantitative' />
-      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/quan1/AppData/Local/Temp/TableauTemp/#TableauTemp_1l58xrv00upuh715btzkf0vf0qnm.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/04/2025 04:46:26 AM' username='tableau_internal_user'>
-          <relation name='Extract' table='[Extract].[Extract]' type='table'>
-            <columns>
-              <column datatype='date' date-parse-format='yyyy-MM-dd' name='month_start' />
-            </columns>
-          </relation>
-          <metadata-records>
-            <metadata-record class='column'>
-              <remote-name>month_start</remote-name>
-              <remote-type>7</remote-type>
-              <local-name>[month_start]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>month_start</remote-alias>
-              <ordinal>0</ordinal>
-              <family>vw_monthly_kpis</family>
-              <local-type>date</local-type>
-              <aggregation>Year</aggregation>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>video_count</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[video_count]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>video_count</remote-alias>
-              <ordinal>1</ordinal>
-              <family>vw_monthly_kpis</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>18</approx-count>
-              <contains-null>true</contains-null>
-              <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>avg_views</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[avg_views]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>avg_views</remote-alias>
-              <ordinal>2</ordinal>
-              <family>vw_monthly_kpis</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>130</approx-count>
-              <contains-null>true</contains-null>
-              <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>median_views</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[median_views]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>median_views</remote-alias>
-              <ordinal>3</ordinal>
-              <family>vw_monthly_kpis</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>130</approx-count>
-              <contains-null>true</contains-null>
-              <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>avg_engagement_rate</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[avg_engagement_rate]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>avg_engagement_rate</remote-alias>
-              <ordinal>4</ordinal>
-              <family>vw_monthly_kpis</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>126</approx-count>
-              <contains-null>true</contains-null>
-              <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
-            </metadata-record>
-          </metadata-records>
-        </connection>
-      </extract>
-      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[:Measure Names]' palette='tableau-20' type='palette'>
-            <map to='#1f77b4'>
-              <bucket>&quot;[federated.1eqm1oo1qbq6941287mp70agdebb].[avg:avg_engagement_rate:qk]&quot;</bucket>
-            </map>
-            <map to='#aec7e8'>
-              <bucket>&quot;[federated.1eqm1oo1qbq6941287mp70agdebb].[sum:avg_views:qk]&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <object-graph>
-        <objects>
-          <object caption='vw_monthly_kpis' id='vw!monthly!kpis_89782875180F46CABCEBE818631C3E22'>
-            <properties context=''>
-              <relation connection='excel-direct.12uajnk0a29a7j11nwun212b2fnm' name='vw_monthly_kpis' table='[vw_monthly_kpis$]' type='table'>
-                <columns gridOrigin='A1:E131:no:A1:E131:0' header='yes' outcome='6'>
-                  <column datatype='date' date-parse-format='yyyy-MM-dd' name='month_start' ordinal='0' />
-                  <column datatype='integer' name='video_count' ordinal='1' />
-                  <column datatype='real' name='avg_views' ordinal='2' />
-                  <column datatype='real' name='median_views' ordinal='3' />
-                  <column datatype='real' name='avg_engagement_rate' ordinal='4' />
-                </columns>
-              </relation>
-            </properties>
-            <properties context='extract'>
-              <relation name='Extract' table='[Extract].[Extract]' type='table'>
-                <columns>
-                  <column datatype='date' date-parse-format='yyyy-MM-dd' name='month_start' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </object-graph>
-    </datasource>
-    <datasource caption='tb_corr_pearson' inline='true' name='federated.1jxfnbc1ilrdf21c2g7kz1wi14t1' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='youtube_analytics_export' name='excel-direct.0xzm2b30w0awa41dxs8iu0jszp1w'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/quan1/Documents/GitHub/youtube_analysis/data/cleaned_data/youtube_analytics_export.xlsx' interpretationMode='0' password='' server='' validate='no' />
-          </named-connection>
-        </named-connections>
-        <relation connection='excel-direct.0xzm2b30w0awa41dxs8iu0jszp1w' name='tb_corr_pearson' table='[tb_corr_pearson$]' type='table'>
-          <columns gridOrigin='A1:C26:no:A1:C26:0' header='yes' outcome='6'>
-            <column datatype='string' name='metric_x' ordinal='0' />
-            <column datatype='string' name='metric_y' ordinal='1' />
-            <column datatype='real' name='correlation_value' ordinal='2' />
-          </columns>
-        </relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[tb_corr_pearson]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:C26:no:A1:C26:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>6</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>metric_x</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[metric_x]</local-name>
-            <parent-name>[tb_corr_pearson]</parent-name>
-            <remote-alias>metric_x</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <object-id>[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>metric_y</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[metric_y]</local-name>
-            <parent-name>[tb_corr_pearson]</parent-name>
-            <remote-alias>metric_y</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <object-id>[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]</object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>correlation_value</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[correlation_value]</local-name>
-            <parent-name>[tb_corr_pearson]</parent-name>
-            <remote-alias>correlation_value</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
-            </attributes>
-            <object-id>[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]</object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='visual patch' datatype='real' name='[Calculation_2080100138377990144]' role='measure' type='quantitative'>
-        <calculation class='tableau' formula='IF [correlation_value] &gt; 1 THEN 1&#13;&#10;ELSEIF [correlation_value] &lt; -1 THEN -1&#13;&#10;ELSE [correlation_value]&#13;&#10;END' />
-      </column>
-      <column caption='tb_corr_pearson' datatype='table' name='[__tableau_internal_object_id__].[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]' role='measure' type='quantitative' />
-      <column caption='Correlation Value' datatype='real' name='[correlation_value]' role='measure' type='quantitative' />
-      <column caption='Metric' datatype='string' name='[metric]' role='dimension' type='nominal' />
-      <column caption='Metric X' datatype='string' name='[metric_x]' role='dimension' type='nominal'>
-        <aliases>
-          <alias key='&quot;comments&quot;' value='Comment' />
-          <alias key='&quot;duration_seconds&quot;' value='Duration' />
-          <alias key='&quot;engagement_rate&quot;' value='Engagement Rate' />
-          <alias key='&quot;likes&quot;' value='Like' />
-          <alias key='&quot;views&quot;' value='View' />
-        </aliases>
-      </column>
-      <column caption='Metric Y' datatype='string' name='[metric_y]' role='dimension' type='nominal'>
-        <aliases>
-          <alias key='&quot;comments&quot;' value='Comment' />
-          <alias key='&quot;duration_seconds&quot;' value='Duration' />
-          <alias key='&quot;engagement_rate&quot;' value='Engagement Rate' />
-          <alias key='&quot;likes&quot;' value='Like' />
-          <alias key='&quot;views&quot;' value='View' />
-        </aliases>
-      </column>
-      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/quan1/AppData/Local/Temp/TableauTemp/#TableauTemp_0fw32lb1mq82vi153wupb0rw980c.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/04/2025 05:01:02 PM' username='tableau_internal_user'>
-          <relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <metadata-records>
-            <metadata-record class='column'>
-              <remote-name>metric_x</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[metric_x]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>metric_x</remote-alias>
-              <ordinal>0</ordinal>
-              <family>tb_corr_pearson</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>5</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>metric_y</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[metric_y]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>metric_y</remote-alias>
-              <ordinal>1</ordinal>
-              <family>tb_corr_pearson</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>5</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]</object-id>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>correlation_value</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[correlation_value]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>correlation_value</remote-alias>
-              <ordinal>2</ordinal>
-              <family>tb_corr_pearson</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>11</approx-count>
-              <contains-null>true</contains-null>
-              <object-id>[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]</object-id>
-            </metadata-record>
-          </metadata-records>
-        </connection>
-      </extract>
-      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <object-graph>
-        <objects>
-          <object caption='tb_corr_pearson' id='tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6'>
-            <properties context=''>
-              <relation connection='excel-direct.0xzm2b30w0awa41dxs8iu0jszp1w' name='tb_corr_pearson' table='[tb_corr_pearson$]' type='table'>
-                <columns gridOrigin='A1:C26:no:A1:C26:0' header='yes' outcome='6'>
-                  <column datatype='string' name='metric_x' ordinal='0' />
-                  <column datatype='string' name='metric_y' ordinal='1' />
-                  <column datatype='real' name='correlation_value' ordinal='2' />
-                </columns>
-              </relation>
-            </properties>
-            <properties context='extract'>
-              <relation name='Extract' table='[Extract].[Extract]' type='table' />
-            </properties>
-          </object>
-        </objects>
-      </object-graph>
-    </datasource>
     <datasource caption='vw_video_metrics' inline='true' name='federated.0dvvsx80ad10mv1dmxtp303552kp' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='youtube_analytics_export' name='excel-direct.07oy8hp0il96nf14xjy2q0qtytnp'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/quan1/Documents/GitHub/youtube_analysis/data/cleaned_data/youtube_analytics_export.xlsx' interpretationMode='0' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/quan1/Documents/GitHub/youtube_analysis/data/cleaned_data/youtube_analytics_export.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='excel-direct.07oy8hp0il96nf14xjy2q0qtytnp' name='vw_video_metrics' table='[vw_video_metrics$]' type='table'>
@@ -797,7 +371,6 @@
               <approx-count>601</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>title</remote-name>
@@ -812,7 +385,6 @@
               <approx-count>597</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>video_type</remote-name>
@@ -827,7 +399,6 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>live_status</remote-name>
@@ -842,7 +413,6 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>category_id</remote-name>
@@ -856,7 +426,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>5</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>category_name</remote-name>
@@ -871,7 +440,6 @@
               <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>published_date</remote-name>
@@ -885,7 +453,6 @@
               <aggregation>Year</aggregation>
               <approx-count>527</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>duration_seconds</remote-name>
@@ -899,7 +466,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>254</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>views</remote-name>
@@ -913,7 +479,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>600</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>likes</remote-name>
@@ -927,7 +492,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>600</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>comments</remote-name>
@@ -941,7 +505,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>584</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>upload_month</remote-name>
@@ -956,7 +519,6 @@
               <approx-count>130</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>published_year</remote-name>
@@ -970,7 +532,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>18</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>published_month</remote-name>
@@ -984,7 +545,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>12</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>engagement_rate</remote-name>
@@ -998,7 +558,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>356</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[vw!video!metrics_7CC1504843684926AEF8099C04B9FB30]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -1049,6 +608,432 @@
                   <column datatype='integer' name='published_year' ordinal='12' />
                   <column datatype='integer' name='published_month' ordinal='13' />
                   <column datatype='real' name='engagement_rate' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='vw_monthly_kpis' inline='true' name='federated.1eqm1oo1qbq6941287mp70agdebb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='youtube_analytics_export' name='excel-direct.12uajnk0a29a7j11nwun212b2fnm'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/quan1/Documents/GitHub/youtube_analysis/data/cleaned_data/youtube_analytics_export.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.12uajnk0a29a7j11nwun212b2fnm' name='vw_monthly_kpis' table='[vw_monthly_kpis$]' type='table'>
+          <columns gridOrigin='A1:E131:no:A1:E131:0' header='yes' outcome='6'>
+            <column datatype='date' date-parse-format='yyyy-MM-dd' name='month_start' ordinal='0' />
+            <column datatype='integer' name='video_count' ordinal='1' />
+            <column datatype='real' name='avg_views' ordinal='2' />
+            <column datatype='real' name='median_views' ordinal='3' />
+            <column datatype='real' name='avg_engagement_rate' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[vw_monthly_kpis]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E131:no:A1:E131:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_start</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[month_start]</local-name>
+            <parent-name>[vw_monthly_kpis]</parent-name>
+            <remote-alias>month_start</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[video_count]</local-name>
+            <parent-name>[vw_monthly_kpis]</parent-name>
+            <remote-alias>video_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_views</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_views]</local-name>
+            <parent-name>[vw_monthly_kpis]</parent-name>
+            <remote-alias>avg_views</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>median_views</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[median_views]</local-name>
+            <parent-name>[vw_monthly_kpis]</parent-name>
+            <remote-alias>median_views</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_engagement_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_engagement_rate]</local-name>
+            <parent-name>[vw_monthly_kpis]</parent-name>
+            <remote-alias>avg_engagement_rate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1eqm1oo1qbq6941287mp70agdebb].[avg:avg_engagement_rate:qk]&quot;' value=' Engagement Rate' />
+          <alias key='&quot;[federated.1eqm1oo1qbq6941287mp70agdebb].[sum:avg_views:qk]&quot;' value='Average Views' />
+        </aliases>
+      </column>
+      <column caption='vw_monthly_kpis' datatype='table' name='[__tableau_internal_object_id__].[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]' role='measure' type='quantitative' />
+      <column caption='Avg Engagement Rate' datatype='real' name='[avg_engagement_rate]' role='measure' type='quantitative' />
+      <column caption='Avg Views' datatype='real' name='[avg_views]' role='measure' type='quantitative' />
+      <column caption='Median Views' datatype='real' name='[median_views]' role='measure' type='quantitative' />
+      <column aggregation='Count' caption='Month Start' datatype='date' datatype-customized='true' name='[month_start]' role='dimension' type='ordinal' />
+      <column caption='Video Count' datatype='integer' name='[video_count]' role='measure' type='quantitative' />
+      <column-instance column='[avg_engagement_rate]' derivation='Avg' name='[avg:avg_engagement_rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_views]' derivation='Sum' name='[sum:avg_views:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/quan1/AppData/Local/Temp/TableauTemp/#TableauTemp_1l58xrv00upuh715btzkf0vf0qnm.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/04/2025 04:46:26 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='yyyy-MM-dd' name='month_start' />
+            </columns>
+          </relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>month_start</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[month_start]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month_start</remote-alias>
+              <ordinal>0</ordinal>
+              <family>vw_monthly_kpis</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>video_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[video_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>video_count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>vw_monthly_kpis</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_views</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_views]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_views</remote-alias>
+              <ordinal>2</ordinal>
+              <family>vw_monthly_kpis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>130</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>median_views</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[median_views]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>median_views</remote-alias>
+              <ordinal>3</ordinal>
+              <family>vw_monthly_kpis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>130</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_engagement_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_engagement_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_engagement_rate</remote-alias>
+              <ordinal>4</ordinal>
+              <family>vw_monthly_kpis</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>126</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[vw!monthly!kpis_89782875180F46CABCEBE818631C3E22]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='tableau-20' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[federated.1eqm1oo1qbq6941287mp70agdebb].[avg:avg_engagement_rate:qk]&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;[federated.1eqm1oo1qbq6941287mp70agdebb].[sum:avg_views:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='vw_monthly_kpis' id='vw!monthly!kpis_89782875180F46CABCEBE818631C3E22'>
+            <properties context=''>
+              <relation connection='excel-direct.12uajnk0a29a7j11nwun212b2fnm' name='vw_monthly_kpis' table='[vw_monthly_kpis$]' type='table'>
+                <columns gridOrigin='A1:E131:no:A1:E131:0' header='yes' outcome='6'>
+                  <column datatype='date' date-parse-format='yyyy-MM-dd' name='month_start' ordinal='0' />
+                  <column datatype='integer' name='video_count' ordinal='1' />
+                  <column datatype='real' name='avg_views' ordinal='2' />
+                  <column datatype='real' name='median_views' ordinal='3' />
+                  <column datatype='real' name='avg_engagement_rate' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy-MM-dd' name='month_start' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='tb_corr_pearson' inline='true' name='federated.1jxfnbc1ilrdf21c2g7kz1wi14t1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='youtube_analytics_export' name='excel-direct.0xzm2b30w0awa41dxs8iu0jszp1w'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/quan1/Documents/GitHub/youtube_analysis/data/cleaned_data/youtube_analytics_export.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0xzm2b30w0awa41dxs8iu0jszp1w' name='tb_corr_pearson' table='[tb_corr_pearson$]' type='table'>
+          <columns gridOrigin='A1:C26:no:A1:C26:0' header='yes' outcome='6'>
+            <column datatype='string' name='metric_x' ordinal='0' />
+            <column datatype='string' name='metric_y' ordinal='1' />
+            <column datatype='real' name='correlation_value' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tb_corr_pearson]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C26:no:A1:C26:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>metric_x</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[metric_x]</local-name>
+            <parent-name>[tb_corr_pearson]</parent-name>
+            <remote-alias>metric_x</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>metric_y</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[metric_y]</local-name>
+            <parent-name>[tb_corr_pearson]</parent-name>
+            <remote-alias>metric_y</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>correlation_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[correlation_value]</local-name>
+            <parent-name>[tb_corr_pearson]</parent-name>
+            <remote-alias>correlation_value</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='visual patch' datatype='real' name='[Calculation_2080100138377990144]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [correlation_value] &gt; 1 THEN 1&#13;&#10;ELSEIF [correlation_value] &lt; -1 THEN -1&#13;&#10;ELSE [correlation_value]&#13;&#10;END' />
+      </column>
+      <column caption='tb_corr_pearson' datatype='table' name='[__tableau_internal_object_id__].[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]' role='measure' type='quantitative' />
+      <column caption='Correlation Value' datatype='real' name='[correlation_value]' role='measure' type='quantitative' />
+      <column caption='Metric X' datatype='string' name='[metric_x]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;comments&quot;' value='Comment' />
+          <alias key='&quot;duration_seconds&quot;' value='Duration' />
+          <alias key='&quot;engagement_rate&quot;' value='Engagement Rate' />
+          <alias key='&quot;likes&quot;' value='Like' />
+          <alias key='&quot;views&quot;' value='View' />
+        </aliases>
+      </column>
+      <column caption='Metric Y' datatype='string' name='[metric_y]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;comments&quot;' value='Comment' />
+          <alias key='&quot;duration_seconds&quot;' value='Duration' />
+          <alias key='&quot;engagement_rate&quot;' value='Engagement Rate' />
+          <alias key='&quot;likes&quot;' value='Like' />
+          <alias key='&quot;views&quot;' value='View' />
+        </aliases>
+      </column>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/quan1/AppData/Local/Temp/TableauTemp/#TableauTemp_0fw32lb1mq82vi153wupb0rw980c.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/04/2025 05:01:02 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>metric_x</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[metric_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>metric_x</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tb_corr_pearson</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>metric_y</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[metric_y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>metric_y</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tb_corr_pearson</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>correlation_value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[correlation_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>correlation_value</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tb_corr_pearson</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tb_corr_pearson' id='tb!corr!pearson_5B2009AA0DBF44C6BB7BB56D4CB45BF6'>
+            <properties context=''>
+              <relation connection='excel-direct.0xzm2b30w0awa41dxs8iu0jszp1w' name='tb_corr_pearson' table='[tb_corr_pearson$]' type='table'>
+                <columns gridOrigin='A1:C26:no:A1:C26:0' header='yes' outcome='6'>
+                  <column datatype='string' name='metric_x' ordinal='0' />
+                  <column datatype='string' name='metric_y' ordinal='1' />
+                  <column datatype='real' name='correlation_value' ordinal='2' />
                 </columns>
               </relation>
             </properties>
@@ -1282,6 +1267,9 @@
             <encoding attr='space' class='0' field='[federated.0dvvsx80ad10mv1dmxtp303552kp].[sum:duration_seconds:qk]' field-type='quantitative' max='2408' min='0' range-type='fixed' scale='log' scope='cols' type='space' />
             <format attr='title' class='0' field='[federated.0dvvsx80ad10mv1dmxtp303552kp].[sum:duration_seconds:qk]' scope='cols' value='Duration (s)' />
             <encoding attr='space' class='0' field='[federated.0dvvsx80ad10mv1dmxtp303552kp].[sum:views:qk]' field-type='quantitative' max='440355720' min='-104464255' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0dvvsx80ad10mv1dmxtp303552kp].[avg:engagement_rate:qk]' value='p0.00%' />
           </style-rule>
           <style-rule element='legend-title-text'>
             <format attr='size' field='[federated.0dvvsx80ad10mv1dmxtp303552kp].[avg:engagement_rate:qk]' value='Engagement Rate'>
@@ -1581,6 +1569,9 @@
             <format attr='title' class='0' field='[federated.1eqm1oo1qbq6941287mp70agdebb].[avg:avg_engagement_rate:qk]' scope='rows' value='Average Engagement Rate' />
             <format attr='title' class='0' field='[federated.1eqm1oo1qbq6941287mp70agdebb].[tqr:month_start:qk]' scope='cols' value='Date' />
           </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='10' />
+          </style-rule>
           <style-rule element='label'>
             <format attr='text-format' field='[federated.1eqm1oo1qbq6941287mp70agdebb].[avg:avg_engagement_rate:qk]' value='p0.00%' />
           </style-rule>
@@ -1803,8 +1794,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2000' minheight='2000' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='99166' id='41' param='vert' type-v2='layout-flow' w='98666' x='667' y='417'>
+            <zone h='100000' id='46' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='99166' id='45' param='vert' type-v2='layout-flow' w='98666' x='667' y='417'>
                 <zone forceUpdate='true' h='6615' id='3' type-v2='text' w='98666' x='667' y='417'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontcolor='#555555' fontsize='28'>Taylor Swift</run>
@@ -2183,7 +2174,7 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='13' />
       <simple-id uuid='{94C83925-935C-409B-9EA9-1F3DF013297F}' />
     </window>
   </windows>
@@ -2500,146 +2491,145 @@
     </thumbnail>
     <thumbnail height='192' name='Sheet 6' width='192'>
       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
-      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
+      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
     </thumbnail>
     <thumbnail height='192' name='WS_Corr' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
@@ -3044,144 +3034,141 @@
     </thumbnail>
     <thumbnail height='192' name='WS_Pareto' width='192'>
       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
-      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
+      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
+      RK5CYII=
     </thumbnail>
     <thumbnail height='192' name='WS_Trend' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk

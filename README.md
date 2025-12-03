@@ -46,7 +46,7 @@ The analysis focuses on Regular (long-form) music videos between 2020 and 2025, 
    - Designed schema and analytical views in [`sql/yt_analytics.sql`](sql/yt_analytics.sql).
    - Computed KPIs, monthly summaries, correlations, and engagement metrics.
 
-  3. **Data Cleaning (Python)**
+3. **Data Cleaning (Python)**
    - Processed and merged datasets in Jupyter Notebook.  
    - Exported clean, analysis-ready workbook: [`data/cleaned_data/youtube_analytics_export.xlsx`](data/cleaned_data/youtube_analytics_export.xlsx)
 
@@ -165,6 +165,7 @@ cd youtube_analysis
 
 # (Optional) run SQL locally
 mysql -u root -p < sql/yt_analytics.sql
+
 
 
 
